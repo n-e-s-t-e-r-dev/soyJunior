@@ -1,0 +1,95 @@
+#body {
+  position: fixed;
+  left: 19%;
+  top: 5%;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+#body button {
+  width: 80px;
+  height: 20px;
+  background: none;
+  border: 1px solid;
+  border-radius: 10px;
+  color: rgba(53, 51, 49, 0.733);
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+}
+
+#body button:hover {
+  width: 80px;
+  height: 20px;
+  background: none;
+  border: 1px solid;
+  border-radius: 10px;
+  color: rgba(15, 63, 220, 0.733);
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+}
+#body h4 {
+  height: 20px;
+}
+
+.modalContainer {
+  display: none;
+  position: fixed;
+  z-index: 80;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  backdrop-filter: blur(18px);
+}
+
+.modalContainer .modal-content {
+  background-color: rgb(254, 250, 250);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #696969;
+  width: 70%;
+  color: rgb(26, 26, 26);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.modal-content p {
+  overflow: hidden;
+  padding: 2rem;
+  width: 100%;
+}
+.modalContainer #close {
+  background-color: aqua;
+  padding: 0.2rem;
+  border-radius: 50px;
+  margin-top: 4rem;
+  color: aliceblue;
+  cursor: pointer;
+  z-index: 200;
+}
+
+@media (max-width: 570px) {
+  .modalContainer {
+    display: none;
+    z-index: 80;
+    width: 84%;
+    height: 95%;
+    overflow: auto;
+    backdrop-filter: blur(18px);
+  }
+  .modalContainer .modal-content {
+    background-color: rgb(254, 250, 250);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #696969;
+    width: 80%;
+    color: rgb(26, 26, 26);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+}
